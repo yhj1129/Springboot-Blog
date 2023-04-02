@@ -4,10 +4,13 @@ import com.cos.blog.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.Optional;
+
 //자동으로 빈 등록됨 @Repository 생략 가능
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-
+    //Select * from user where username = 1?;
+    Optional<User> findByUsername(String username);
 }
 
 
