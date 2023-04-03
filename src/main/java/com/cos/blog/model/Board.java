@@ -28,7 +28,6 @@ public class Board {
     @Lob //대용량 데이터를 저장할 때
     private String content;
 
-    @ColumnDefault("0")
     private int count;
 
     @CreationTimestamp

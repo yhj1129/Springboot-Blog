@@ -29,6 +29,7 @@ public class UserApiController {
 
         userService.회원가입(user);
         return new ResponseDto<Integer>(HttpStatus.OK.value(), 1); // 상태코드를 직접 적는 것보다 HttpStatus를 이용하는 것이 안전함
+
     }
 
 //    //스프링 시큐리티를 이용해서 로그인하도록
